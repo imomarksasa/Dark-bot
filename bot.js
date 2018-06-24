@@ -591,5 +591,4 @@ client.on('message', message => {
 
 
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.token);
+client.login("NDU4MzQzMjU5NjU2MTU5MjU2.DgmQ8Q.L_AZ4gh2HQLZeZaUFOBCWlalKLA");
