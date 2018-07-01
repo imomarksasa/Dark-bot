@@ -3547,5 +3547,23 @@ message.react("??")
 
 });
 
+
+
+const child_process = require("child_process");
+const adminprefix = "*";
+const devs = ['194559857536270336'];
+
+client.on('message', message => {
+if(message.content === adminprefix + "restart") {
+      if (!devs.includes(message.author.id)) return;
+          message.channel.send(`⚠️ **الشخص الذي اعاد تشغيل البوت ${message.author.username}**`);
+        console.log(`⚠️ جاري اعادة تشغيل البوت... ⚠️`);
+        client.destroy();
+        child_process.fork(__dirname + "/dark.js");
+        console.log(`تم اعادة تشغيل البوت`);
+    }
+  
+  }); // By Ghost
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
