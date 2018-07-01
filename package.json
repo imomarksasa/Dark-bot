@@ -9,7 +9,6 @@
   "dependencies": {
     "discord.js": "11.1.0",
     "request": "2.81.0"
-    "async": "0.2.8",
     "canvas": "1.6.11",
     "discord.js": "11.3.2",
     "discord.js-musicbot-addon": "12.0.6",
