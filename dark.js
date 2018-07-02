@@ -3206,7 +3206,6 @@ client.on('message', message => {
 **   🔖   all: **__${message.guild.memberCount}__`)      
  
          message.channel.send({embed});
- 
     }
   });
   
