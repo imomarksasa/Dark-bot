@@ -256,8 +256,9 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : M3a4x ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` كل عام وانتم بخير | *help  `,"http://twitch.tv/mjrmqm")
-client.user.setStatus("dnd")
+client.on('ready', () => {
+  client.user.setActivity("»*help | *inv «",{type: 'WATCHING'});
+
 });
 client.on("guildCreate", guild => {
   console.log(` Join Bot Of Server ${guild.name} Owner Of Server ${guild.owner.user.username}!`)
