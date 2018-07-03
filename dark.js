@@ -3320,13 +3320,19 @@ if (message.content.startsWith(prefix + 'الصورة')) {
 }
 });
 
-if (message.content === '*own') {
-         let embed = new Discord.RichEmbed()
-.setThumbnail(message.author.avatarURL)    
-      .addField("** مبرمج البوت :wrench: **","**๓Зค4x | モアズ | مــعــاذ#9297  **")
-.setColor('RANDOM')
-  message.author.sendEmbed(embed);
-    }
+client.on('message', message => {
+  if(message.content.startsWith ('*own')) {
+      if(!message.channel.guild) return;
+    let embed = new Discord.RichEmbed()
+    .setColor('#044812')
+          .setThumbnail(message.author.avatarURL)
+      .setFooter(message.author.username, message.author.avatarURL)
+ 
+    .setDescription(`** مبرمج البوت :wrench: **","**๓Зค4x | モアズ | مــعــاذ#9297  **`)
+        message.channel.send()
+ 
+message.channel.sendEmbed(embed)
+}
 });
 
 client.login(process.env.BOT_TOKEN);
