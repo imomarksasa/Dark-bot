@@ -109,7 +109,7 @@ client.on('message', message => {
 if (message.content === '*help') {
          let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)    
-      .addField("** مبرمج البوت :wrench: **","**๓Зค4x | モアズ | مــعــاذ#9297  **")
+      .addField("** مبرمج البوت :wrench: **","**- Mas | ๓Зค4x | معاذ#9297  **")
 .setColor('RANDOM')
   message.author.sendEmbed(embed);
     }
@@ -3317,6 +3317,21 @@ if (message.content.startsWith(prefix + 'الأسم')) {
 if (message.content.startsWith(prefix + 'الصورة')) {
   client.user.setAvatar(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+}
+});
+
+client.on('message', message => {
+  if(message.content.startsWith ('*own')) {
+      if(!message.channel.guild) return;
+    let embed = new Discord.RichEmbed()
+    .setColor('#044812')
+          .setThumbnail(message.author.avatarURL)
+      .setFooter(message.author.username, message.author.avatarURL)
+ 
+    .setDescription(`**صاحب البوت: - Mas | ๓Зค4x | معاذ#9297** `)
+        message.channel.send()
+ 
+message.channel.sendEmbed(embed)
 }
 });
 
