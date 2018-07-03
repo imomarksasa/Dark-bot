@@ -8,7 +8,7 @@ client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
 client.on('ready', () => {
-  client.user.setGame(` By M3a4x #4272 .`,'https://www.twitch.tv/mjrmqm');
+client.user.setGame(` »*help | *inv «  `,"http://twitch.tv/mjrmqm")
   console.log('---------------');
   console.log('Dark-bot Bot Is Online')
   console.log('---------------')
@@ -189,9 +189,8 @@ client.on('ready',  () => {
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
 });
 
-client.on('ready', () => {
-  client.user.setActivity("»*help | *inv «",{type: 'WATCHING'});
-
+client.user.setGame(` »*help | *inv «  `,"http://twitch.tv/mjrmqm")
+client.user.setStatus("dnd")
 });
   
 
