@@ -336,7 +336,7 @@ var message = "zg";
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('S Bot Link Click Here .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=465885551329804288&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=458343259656159256&permissions=0&scope=bot')
   .setDescription(`**
   New Server Add S Bot ✅
 اسم السيرفر: *{guild.name}
@@ -349,7 +349,7 @@ var message = "zg";
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('S Bot Link Click Here .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=465885551329804288&permissions=8&scope=bot')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=458343259656159256&permissions=0&scope=bot')
   .setDescription(`**
   Server Kicked S Bot :cry:
 اسم السيرفر: *{guild.name}
