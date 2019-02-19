@@ -21,7 +21,7 @@ var fs = require('fs');
 
 client.on('ready', function(){ // Leaked by [ @M3a4x ]
     var ms = 30000 ;
-    var setGame = [`*help | *inv `,` Dark Bot By Dark TeaM !`];
+    var setGame = [`*help | *inv `,` Bot By Alaseri`];
     var i = -1;
     var j = 0;
     setInterval(function (){
