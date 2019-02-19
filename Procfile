@@ -1,1 +1,1 @@
-worker: node dark.js
+worker: node nyr.js
